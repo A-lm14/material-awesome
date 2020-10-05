@@ -1,6 +1,6 @@
 local filesystem = require('gears.filesystem')
 
--- Thanks to jo148 on github for making rofi dpi aware!
+-- Thanks to jo148 on github for making rofi dpi aware
 local with_dpi = require('beautiful').xresources.apply_dpi
 local get_dpi = require('beautiful').xresources.get_dpi
 local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. with_dpi(400) .. ' -show drun -theme ' .. filesystem.get_configuration_dir() .. '/configuration/rofi.rasi -run-command "/bin/bash -c -i \'shopt -s expand_aliases; {cmd}\'"'
@@ -16,7 +16,7 @@ return {
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
     browser = 'firefox',
-    editor = 'mousepad', -- gui text editor
+    editor = 'code-oss', -- gui text editor
     social = 'discord',
     game = rofi_command,
     files = 'thunar',
@@ -36,6 +36,7 @@ return {
      'steam -silent',
      '/usr/bin/barrier',
      '~/.local/bin/wallpaper', -- wallpaper-reddit script
+     'nitrogen --restore &',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
     '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
