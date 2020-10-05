@@ -8,18 +8,18 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'terminator',
+    terminal = 'xfce4-terminal',
     rofi = rofi_command,
-    lock = 'i3lock-fancy',
-    quake = 'terminator',
+    lock = 'i3lock-fancy-rapid 5 3',
+    quake = 'xfc4-terminal',
     screenshot = 'flameshot full -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
-    browser = 'brave',
-    editor = 'gedit', -- gui text editor
+    browser = 'firefox',
+    editor = 'mousepad', -- gui text editor
     social = 'discord',
     game = rofi_command,
-    files = 'nautilus',
+    files = 'thunar',
     music = rofi_command 
   },
   -- List of apps to start once on start-up
