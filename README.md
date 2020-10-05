@@ -30,6 +30,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 ```
 yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto gnome-polkit materia-gtk-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager -y
+or
 pamac install rofi picom i3lock-fancy xclip ttf-roboto gnome-polkit materia-gtk-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager 
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
