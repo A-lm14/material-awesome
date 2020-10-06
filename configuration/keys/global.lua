@@ -114,7 +114,7 @@ local globalKeys =
     function()
       awful.util.spawn(apps.default.editor)
     end,
-    {description = 'open a text/code editor', group = 'launcher'}
+    {description = 'open a text/code editor', group = 'App shortcut'}
   ),
   awful.key(
     {modkey},
@@ -122,7 +122,7 @@ local globalKeys =
     function()
       awful.util.spawn(apps.default.browser)
     end,
-    {description = 'open a browser', group = 'launcher'}
+    {description = 'open a browser', group = 'App shortcut'}
   ),
   -- Standard program
   awful.key(
@@ -131,7 +131,7 @@ local globalKeys =
     function()
       awful.spawn(apps.default.terminal)
     end,
-    {description = 'open a terminal', group = 'launcher'}
+    {description = 'open a terminal', group = 'App shortcut'}
   ),
   awful.key({modkey, 'Control'}, 'r', _G.awesome.restart, {description = 'reload awesome', group = 'awesome'}),
   awful.key({modkey, 'Control'}, 'q', _G.awesome.quit, {description = 'quit awesome', group = 'awesome'}),
@@ -228,15 +228,6 @@ local globalKeys =
     end,
     {description = 'restore minimized', group = 'client'}
   ),
-  -- Dropdown application
-  awful.key(
-    {modkey},
-    'z',
-    function()
-      _G.toggle_quake()
-    end,
-    {description = 'dropdown application', group = 'launcher'}
-  ),
   -- Widgets popups
   --[[awful.key(
     {altkey},
@@ -282,7 +273,7 @@ local globalKeys =
     function()
       awful.spawn('amixer -D pulse sset Master 5%+')
     end,
-    {description = 'volume up', group = 'hotkeys'}
+    {description = 'volume up', group = 'Audio'}
   ),
   awful.key(
     {},
@@ -290,7 +281,7 @@ local globalKeys =
     function()
       awful.spawn('amixer -D pulse sset Master 5%-')
     end,
-    {description = 'volume down', group = 'hotkeys'}
+    {description = 'volume down', group = 'Audio'}
   ),
   awful.key(
     {},
@@ -298,7 +289,7 @@ local globalKeys =
     function()
       awful.spawn('amixer -D pulse set Master 1+ toggle')
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'toggle mute', group = 'Audio'}
   ),
   awful.key(
     {},
@@ -306,7 +297,7 @@ local globalKeys =
     function()
       --
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'toggle mute', group = 'Audio'}
   ),
   awful.key(
     {},
@@ -314,7 +305,7 @@ local globalKeys =
     function()
       --
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'toggle mute', group = 'Audio'}
   ),
   awful.key(
     {},
@@ -322,7 +313,7 @@ local globalKeys =
     function()
       _G.exit_screen_show()
     end,
-    {description = 'toggle mute', group = 'hotkeys'}
+    {description = 'toggle mute', group = 'Audio'}
   ),
   -- Screen management
   awful.key(
@@ -386,16 +377,16 @@ local globalKeys =
     function()
       awful.util.spawn(apps.default.files)
     end,
-    {description = 'filebrowser', group = 'hotkeys'}
+    {description = 'filebrowser', group = 'App shortcut'}
   ),
   -- Emoji Picker
   awful.key(
     {modkey},
-    '`',
+    '=',
     function()
       awful.util.spawn_with_shell('ibus emoji')
     end,
-    {description = 'Open the ibus emoji picker to copy an emoji to your clipboard', group = 'hotkeys'}
+    {description = 'Open the ibus emoji picker to copy an emoji to your clipboard', group = 'App shortcut'}
   )
 )
 
