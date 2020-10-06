@@ -8,10 +8,10 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'xfce4-terminal',
+    terminal = 'alacritty',
     rofi = rofi_command,
     lock = 'i3lock-fancy-rapid 5 3',
-    quake = 'xfc4-terminal',
+    quake = 'alacritty',
     screenshot = 'flameshot full -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
@@ -20,7 +20,7 @@ return {
     social = 'discord',
     game = rofi_command,
     files = 'thunar',
-    music = rofi_command 
+    music = 'spotify' 
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
@@ -32,8 +32,6 @@ return {
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     'xfce4-power-manager', -- Power manager
      'flameshot',
-     'synology-drive -minimized',
-     'steam -silent',
      '/usr/bin/barrier',
      '~/.local/bin/wallpaper', -- wallpaper-reddit script
      'nitrogen --restore &',
