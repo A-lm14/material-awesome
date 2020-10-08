@@ -19,14 +19,14 @@ return {
     editor = 'code-oss', -- gui text editor
     social = 'discord',
     -- game = rofi_command,
-    files = 'thunar',
+    files = 'nautilus',
     music = 'spotify' 
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
     'picom --config ' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf', --Picom/Compton compositor startup
     'nm-applet --indicator', -- wifi applet
-    'pnmixer', -- shows an audiocontrol applet in systray when installed.
+    'volumeicon', -- shows an audiocontrol applet in systray when installed.
     'blueman-applet', -- Bluetooth tray icon
     'numlockx on', -- enable numlock
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
