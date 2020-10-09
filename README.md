@@ -62,12 +62,13 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 ### 2) Clone the configuration
 
-```
-git clone https://github.com/A-lm14/material-awesome.git ~/.config/awesome ``` ### 3) Set the themes
+git clone https://github.com/A-lm14/material-awesome.git ~/.config/awesome 
+
+### 3) Set the themes
 Start `lxappearance` to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
-### 5) Read the documentation
+### 4) Read the documentation
 
 The documentation live within the source code.
 
