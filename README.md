@@ -29,10 +29,13 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-yay -S awesome rofi nitrogen picom i3lock-fancy xclip ttf-roboto gnome-polkit materia-gtk-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager -y
+yay -S install rofi picom i3lock-fancy-rapid-git xclip ttf-roboto ttf-fira-code gnome-polkit materia-gtk-theme lxappearance flameshot volumeicon network-manager-applet xfce4-power-manager 
+
 or
-pamac install rofi picom i3lock-fancy xclip ttf-roboto gnome-polkit materia-gtk-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager 
+
+pamac install rofi picom i3lock-fancy-rapid-git xclip ttf-roboto ttf-fira-code gnome-polkit materia-gtk-theme lxappearance flameshot volumeicon network-manager-applet xfce4-power-manager 
 wget -qO- https://git.io/papirus-icon-theme-install | sh
+
 ```
 
 #### Program list
@@ -41,7 +44,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
 - [picom](https://github.com/yshui/picom) for the compositor (blur and animations) universal install: picom - Debian users need PPA (`sudo add-apt-repository ppa:regolith-linux/unstable`)
-- [i3lock-fancy-rapid](https://github.com/meskarune/i3lock-fancy) the lockscreen application universal install: i3lock-fancy
+- [i3lock-fancy-rapid](https://github.com/meskarune/i3lock-fancy-rapid) the lockscreen application universal install: AUR: i3lock-fancy-rapid-git
 - [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard package: xclip
 - [gnome-polkit] recommend using the gnome-polkit as it integrates nicely for elevating programs that need root access
 - [Dracula](https://github.com/dracula/gtk) as GTK theme - Arch Install: (AUR) ant-dracula-gtk-theme
@@ -49,19 +52,16 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 - [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
 - (Laptop) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
 - [flameshot](https://flameshot.js.org/#/) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the apps.lua file
-- [pnmixer](https://github.com/nicklan/pnmixer) Audio Tray icon that is in debian repositories and is easily installed on arch through AUR.
+- [volumeicon](https://github.com/Maato/volumeicon) Audio Tray icon. 
 - [network-manager-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) nm-applet is a Network Manager Tray display from GNOME.
 - [xfce4-power-manager](https://docs.xfce.org/xfce/xfce4-power-manager/start) XFCE4's power manager is excellent and a great way of dealing with sleep, monitor timeout, and other power management features.
+##### Optional
 - [nitrogen](https://github.com/l3ib/nitrogen) Wallpaper setting program
 
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/A-lm14/material-awesome.git ~/.config/awesome
-```
-
-### 3) Set the themes
-
+git clone https://github.com/A-lm14/material-awesome.git ~/.config/awesome ``` ### 3) Set the themes
 Start `lxappearance` to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
