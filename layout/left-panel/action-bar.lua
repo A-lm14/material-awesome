@@ -13,8 +13,8 @@ return function(screen, panel, action_bar_width)
   local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%H\n%M</span>')
 
   -- Clock / Calendar 12AM/PM fornat
-  -- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%I\n%M</span>\n<span font="Roboto Mono bold 9">%p</span>')
-  -- textclock.forced_height = 56
+   --local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%I\n%M</span>\n<span font="Roboto Mono bold 9">%p</span>')
+   --textclock.forced_height = 56
 
   -- Add a calendar (credits to kylekewley for the original code)
   local month_calendar = awful.widget.calendar_popup.month({
